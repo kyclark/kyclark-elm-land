@@ -226,7 +226,17 @@ jobs =
                         , Html.text ", Lab of Drs. Lincoln Stein and Doreen Ware, May 2001-May 2014"
                         , Html.ul []
                             [ Html.li []
-                                [ link "http://gramene.org " ]
+                                [ link "http://gramene.org"
+                                , Html.text ": A comparative genomics resource for plants with tasks ranging from database design and loading to front/backend web development and project management."
+                                ]
+                            , Html.li []
+                                [ Html.text "Created CMap ("
+                                , link "https://doi.org/10.1093/bioinformatics/btp458"
+                                , Html.text ") for visual comparison of genomic maps."
+                                ]
+                            , Html.li []
+                                [ Html.text "Led open source development team for CPAN module SQL::Translator for DDL conversion."
+                                ]
                             ]
                         ]
                     ]
