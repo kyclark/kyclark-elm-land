@@ -92,9 +92,9 @@ education =
         [ Html.h3 [ class "subtitle" ] [ Html.text "Education" ]
         , Html.ul []
             [ Html.li []
-                [ Html.text "MS in Biosystems Engineering (GPA 4.0), University of Arizona, Tucson, AZ" ]
+                [ Html.text "MS in Biosystems Engineering (GPA 4.0), University of Arizona (Tucson, AZ)" ]
             , Html.li []
-                [ Html.text "BA in English Literature, minor in music (GPA 3.9), University of North Texas, Denton, TX" ]
+                [ Html.text "BA in English Literature, minor in music (GPA 3.9), University of North Texas (Denton, TX)" ]
             ]
         ]
 
@@ -125,11 +125,15 @@ jobs =
                             , Html.li []
                                 [ Html.text "Tallyman ("
                                 , link "https://github.com/TravisWheelerLab/tallyman"
-                                , Html.text "): Rust program for counting sequences."
+                                , Html.text "): Rust program for extremely fast counting of sequences for NEAR (neural embeddings for amino acid relationships, "
+                                , link "https://github.com/TravisWheelerLab/NEAR"
+                                , Html.text ")"
                                 ]
                             , Html.li []
-                                [ link "https://mdrepo.org"
-                                , Html.text ": Elm rewrite of React user interface, update Django backend and file processing."
+                                [ link "https://staging.mdrepo.org"
+                                , Html.text ": Elm rewrite of React user interface ("
+                                , link "https://mdrepo.org"
+                                , Html.text "), update Django backend and file processing."
                                 ]
                             ]
                         ]
@@ -153,12 +157,14 @@ jobs =
                                 , Html.text "."
                                 ]
                             , Html.li []
-                                [ link "https://github.com/kyclark/dxrs"
+                                [ Html.a
+                                    [ href "https://github.com/kyclark/dxrs" ]
+                                    [ Html.text "dxrs" ]
                                 , Html.text ": Project to address technical debt by rewriting "
-                                , Html.code [] [ Html.text "dxpy" ]
-                                , Html.text "CLI ("
-                                , link "https://pypi.org/project/dxpy/"
-                                , Html.text ") in Rust."
+                                , Html.a
+                                    [ href "https://pypi.org/project/dxpy" ]
+                                    [ Html.text "dxpy" ]
+                                , Html.text " in Rust."
                                 ]
                             ]
                         ]
@@ -187,11 +193,13 @@ jobs =
                                 [ Html.text "Data ingestion tasks for Rare Disease Clinical Outcome Assessment Consortium, including ETL operations for wearable sensor data."
                                 ]
                             , Html.li []
-                                [ Html.text "Designed and built mirror of clinicaltrials.gov database in PostgreSQL for C-Path scientists to track and save clinical trails of interest through a custom website/API written with Rust ("
+                                [ Html.text "Designed and built private mirror of "
+                                , link "http://ClinicalTrials.gov"
+                                , Html.text " database in PostgreSQL for C-Path scientists to track and save clinical trails of interest through a custom website/API written with Rust ("
                                 , link "https://github.com/kyclark/ctloader"
-                                , Html.text "), Elm/Python/FastAPI ("
+                                , Html.text ") and Elm/Python/FastAPI ("
                                 , link "https://github.com/kyclark/ctweb"
-                                , Html.text "), PostgreSQL."
+                                , Html.text ")."
                                 ]
                             ]
                         ]
@@ -206,12 +214,21 @@ jobs =
                             [ Html.li []
                                 [ Html.text "Created iMicrobe.us ("
                                 , link "https://doi.org/10.1093/gigascience/giz083"
-                                , Html.text ") for research of environmental/metagenomic datasets using Elm, NodeJS, MySQL."
+                                , Html.text ") for research of environmental/metagenomic datasets using Elm, NodeJS, MySQL. Required reverse engineering and web scraping of "
+                                , Html.a [ href "https://en.wikipedia.org/wiki/Community_Cyberinfrastructure_for_Advanced_Microbial_Ecology_Research_and_Analysis" ] [ Html.text "CAMERA" ]
+                                , Html.text
+                                    """
+                                    website, database design and loading, and data transfer to save data before loss of
+                                    CAMERA funding. Created web interface to access cloud-based data storage,
+                                    remotely execute dozens of HPC pipelines at 
+                                    """
+                                , Html.a [ href "https://tacc.utexas.edu/" ] [ Html.text "Texas Advanced Computing Center" ]
+                                , Html.text " via "
+                                , Html.a [ href "http://cyverse.org" ] [ Html.text "Cyverse" ]
+                                , Html.text ", and retrieve analysis results."
                                 ]
                             , Html.li []
                                 [ Html.text "Tool development and data analysis for research projects, papers, and collaborations." ]
-                            , Html.li []
-                                [ Html.text "Developed HPC pipelines in bash, Rust, Python, and R executed locally by SLURM or remotely at Texas Advanced Computing Center via Cyverse API (cyverse.org)" ]
                             , Html.li []
                                 [ Html.text "Mentoring of students and junior developers, lab presentations"
                                 ]
