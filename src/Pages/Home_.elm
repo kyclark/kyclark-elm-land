@@ -130,10 +130,25 @@ jobs =
                                 , Html.text ")"
                                 ]
                             , Html.li []
-                                [ link "https://staging.mdrepo.org"
-                                , Html.text ": Elm rewrite of React user interface ("
-                                , link "https://mdrepo.org"
-                                , Html.text "), update Django backend and file processing."
+                                [ Html.text "WIP: Initiated Elm rewrite (see "
+                                , link "https://staging.mdrepo.org"
+                                , Html.text ") of "
+                                , Html.a
+                                    [ href "https://mdrepo.org" ]
+                                    [ Html.text "React user interface" ]
+                                , Html.text ", update Django backend and file processing."
+                                ]
+                            , Html.li []
+                                [ Html.text "WIP: Initiated Elm rewrite of React user interface for "
+                                , Html.a [ href "https://pandb.org" ] [ Html.text "Precision Aging Network" ]
+                                ]
+                            , Html.li []
+                                [ Html.text
+                                    """
+                                    Created weekly meetings to teach coding
+                                    best practices and testing to students and
+                                    junior developers
+                                    """
                                 ]
                             ]
                         ]
@@ -146,10 +161,27 @@ jobs =
                         , Html.text ", January 2022-March 2024"
                         , Html.ul []
                             [ Html.li []
-                                [ Html.text "Pre- and post-sales development of custom cloud-based workflow solutions for customers using bash, Python, and WDL/dxCompiler. Worked with dozens of clients in clinical diagnostics, Pharma, and research to create new or translate existing on-premises/HPC/DIY-AWS workflows into reliable DNAnexus pipelines."
+                                [ Html.text
+                                    """
+                                    Pre- and post-sales development of custom
+                                    cloud-based workflow solutions for
+                                    customers using bash, Python, and
+                                    WDL/dxCompiler. Worked with dozens of
+                                    clients in clinical diagnostics,
+                                    Pharma, and research to create new or
+                                    translate existing
+                                    on-premises/HPC/DIY-AWS workflows into
+                                    reliable and performant DNAnexus pipelines.
+                                    """
                                 ]
                             , Html.li []
-                                [ Html.text "Lead new customer training and onboarding with DNAnexus Academy. Consistently given highest feedback rankings by customers."
+                                [ Html.text
+                                    """
+                                    Provided new customer training and
+                                    onboarding with DNAnexus Academy, revising
+                                    existing materials and creating new ones,
+                                    as needed.
+                                    """
                                 ]
                             , Html.li []
                                 [ Html.text "Lead the effort to improve training materials and create a public collection of tutorials at "
@@ -157,14 +189,15 @@ jobs =
                                 , Html.text "."
                                 ]
                             , Html.li []
-                                [ Html.a
+                                [ Html.text "Created Rust ("
+                                , Html.a
                                     [ href "https://github.com/kyclark/dxrs" ]
                                     [ Html.text "dxrs" ]
-                                , Html.text ": Project to address technical debt by rewriting "
+                                , Html.text ") rewrite of Python command-line tool "
                                 , Html.a
                                     [ href "https://pypi.org/project/dxpy" ]
                                     [ Html.text "dxpy" ]
-                                , Html.text " in Rust."
+                                , Html.text "."
                                 ]
                             ]
                         ]
@@ -177,7 +210,13 @@ jobs =
                         , Html.text ", Biosystems Engineering Department, Fall 2021"
                         , Html.ul []
                             [ Html.li []
-                                [ Html.text "Created introductory programming material (published as Tiny Python Projects) and lead classroom instruction for undergraduate and graduate students."
+                                [ Html.text
+                                    """
+                                    Created introductory programming material
+                                    (published as Tiny Python Projects) and
+                                    lead classroom instruction for
+                                    undergraduate and graduate students.
+                                    """
                                 ]
                             ]
                         ]
@@ -190,12 +229,23 @@ jobs =
                         , Html.text ", August 2020-December 2021"
                         , Html.ul []
                             [ Html.li []
-                                [ Html.text "Data ingestion tasks for Rare Disease Clinical Outcome Assessment Consortium, including ETL operations for wearable sensor data."
+                                [ Html.text
+                                    """
+                                    Data ingestion tasks for Rare Disease
+                                    Clinical Outcome Assessment Consortium,
+                                    including ETL operations for wearable
+                                    sensor data.
+                                    """
                                 ]
                             , Html.li []
-                                [ Html.text "Designed and built private mirror of "
+                                [ Html.text "Created and built a custom, local mirror of "
                                 , link "http://ClinicalTrials.gov"
-                                , Html.text " database in PostgreSQL for C-Path scientists to track and save clinical trails of interest through a custom website/API written with Rust ("
+                                , Html.text
+                                    """
+                                    database in PostgreSQL for C-Path
+                                    scientists to track and save clinical
+                                    trails of interest through a custom
+                                    website/API written with Rust ("""
                                 , link "https://github.com/kyclark/ctloader"
                                 , Html.text ") and Elm/Python/FastAPI ("
                                 , link "https://github.com/kyclark/ctweb"
@@ -230,7 +280,7 @@ jobs =
                             , Html.li []
                                 [ Html.text "Tool development and data analysis for research projects, papers, and collaborations." ]
                             , Html.li []
-                                [ Html.text "Mentoring of students and junior developers, lab presentations"
+                                [ Html.text "Mentoring of students and junior developers, lab presentations."
                                 ]
                             ]
                         ]
@@ -243,23 +293,50 @@ jobs =
                         , Html.text ", Lab of Drs. Lincoln Stein and Doreen Ware, May 2001-May 2014"
                         , Html.ul []
                             [ Html.li []
-                                [ link "http://gramene.org"
-                                , Html.text ": A comparative genomics resource for plants with tasks ranging from database design and loading to front/backend web development and project management."
+                                [ Html.text "Project manager for "
+                                , link "http://gramene.org"
+                                , Html.text
+                                    """
+                                    a comparative genomics resource for plants
+                                    with tasks ranging from database design and
+                                    loading to front/backend web development. 
+                                    Designed and implemented novel, comprehensive fulltext site search.
+                                    """
                                 ]
                             , Html.li []
-                                [ Html.text "Created CMap ("
+                                [ Html.text "Lead development of CMap ("
                                 , link "https://doi.org/10.1093/bioinformatics/btp458"
-                                , Html.text ") for visual comparison of genomic maps."
+                                , Html.text "), a web-based tool for visual comparison of genomic maps."
                                 ]
                             , Html.li []
-                                [ Html.text "Led open source development team for CPAN module SQL::Translator for DDL conversion."
+                                [ Html.text "Created novel CPAN module "
+                                , Html.a
+                                    [ href "https://metacpan.org/pod/SQL::Translator" ]
+                                    [ Html.text "SQL::Translator" ]
+                                , Html.text
+                                    """
+                                    and led open source development team for
+                                    conversion of SQL schema DDL (data
+                                    definition language) from one dialect to
+                                    another (e.g., Oracle to PostgreSQL) or to
+                                    other formats such as documentation,
+                                    entity-relationship diagrams, and automatic
+                                    code generation.
+                                    """
                                 ]
                             ]
                         ]
                     ]
                 , Html.tr []
                     [ Html.td []
-                        [ Html.b [] [ Html.text "Prior experience at Boston.com/New York Times Digital" ]
+                        [ Html.b []
+                            [ Html.text
+                                """
+                                Prior experience at Boston.com/New York Times
+                                Digital, Cadence Network, Computer People, 
+                                Thorsoft, and Bio-Synthesis.
+                                """
+                            ]
                         ]
                     ]
                 ]
