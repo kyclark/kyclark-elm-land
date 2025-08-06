@@ -31,7 +31,7 @@ sketch =
         [ Html.ul []
             [ Html.li []
                 [ Html.text
-                    "Innovative software engineer with expertise in industry, academia, and research."
+                    "Innovative software engineer with expertise in industry, academia, and research. "
                 ]
             , Html.li []
                 [ Html.text
